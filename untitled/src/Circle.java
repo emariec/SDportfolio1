@@ -21,12 +21,12 @@ public class Circle extends Shapes {
         return area;
 
     }
-    
+    // gets the circumference by using math.PI and divided radius with 2. 
     public double getCircumference(){
         this.circumference = radius*2*Math.PI;
         return circumference;
     }
-
+    // the hasPointInside method checks if the object has a point inside by seeing if the distance to center is bigger or smaller then radius. 
     public boolean hasPointInside(int x, int y){
         double distToCenter = distTwoPoints(x,y, center[0],center[1]);
 
