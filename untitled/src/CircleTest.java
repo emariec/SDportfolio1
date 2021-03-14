@@ -27,4 +27,10 @@ public class CircleTest {
         circle.hasPointInside(1,1);
         assertEquals(circle.isInside, false);
     }
+    
+     @Test
+    void hasPointInside2(){
+        circle.hasPointInside(2,3);
+        assertEquals(circle.isInside, true);
+    }
 }
