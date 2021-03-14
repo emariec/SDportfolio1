@@ -15,13 +15,13 @@ public class Circle extends Shapes {
         this.area = getArea();
 
     }
-
+    // get area by using math.PI
     public double getArea(){
         this.area = Math.PI * (radius * radius);
         return area;
 
     }
-
+    
     public double getCircumference(){
         this.circumference = radius*2*Math.PI;
         return circumference;
