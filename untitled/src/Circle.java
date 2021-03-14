@@ -5,6 +5,8 @@ public class Circle extends Shapes {
 
 
     public Circle(int x, int y, int r){
+     
+        // when a new circle is created the different variable attributes for the shape gets defined 
         this.name = "circle";
 
         this.radius = r;
