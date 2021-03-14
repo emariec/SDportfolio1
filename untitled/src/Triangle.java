@@ -4,7 +4,7 @@ public class Triangle extends Shapes {
     double side3;
 
     public Triangle(int x1, int y1, int x2, int y2, int x3, int y3){
-        // when a new triangle is created the differnt virable attributes are set. 
+        // when a new triangle is created the differnt variable attributes are set. 
         this.name = "triangle";
 
         this.threePoint[0] = x1;
@@ -14,10 +14,12 @@ public class Triangle extends Shapes {
         this.threePoint[4] = x3;
         this.threePoint[5] = y3;
 
+        //Defines the sides of a triangle as the distance between the points. 
         this.side1 = distTwoPoints(threePoint[0],threePoint[1], threePoint[2],threePoint[3]);
         this.side2 = distTwoPoints(threePoint[0],threePoint[1],threePoint[4],threePoint[5]);
         this.side3 = distTwoPoints(threePoint[2],threePoint[3],threePoint[4],threePoint[5]);
 
+        //For a triangle we decided to define the center as one of the points, since a triangle can have multiple centers. 
         this.center[0] = x1;
         this.center[1] = y1;
 
