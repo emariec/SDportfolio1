@@ -19,7 +19,7 @@ public class Shapes{
         return distance;
     }
 
-    //Method that returns center. The method for calculating the center is defined in the classes of the individual shapes.
+    //Method that returns center as a string. The method for calculating the center is defined in the classes of the individual shapes.
     public String getCenter(){
         return Arrays.toString(center);
     }
