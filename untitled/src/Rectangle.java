@@ -6,6 +6,8 @@ public class Rectangle extends Shapes{
 
 
     public Rectangle (int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4){
+        
+        // when a new rectangle is created the different variable attributes for the shape gets defined 
         this.name = "rectangle";
 
         this.fourPoint[0] = x1;
@@ -26,17 +28,17 @@ public class Rectangle extends Shapes{
         this.circumference = getCircumference();
         this.area = getArea();
     }
-
+    // calculates the area of the rectangle, using the side lenghts of the rectangle
     public double getArea(){
         this.area= side1*side2;
         return area;
     }
-
+    // calculates the cicumference of the rectangle
     public double getCircumference(){
         this.circumference = side1*2 + side2*2;
         return circumference;
     }
-
+    //checks weather a point is located within the shape or not, returns a boolean
     public boolean hasPointInside(int x, int y){
 
         if (x < fourPoint[0] || x > fourPoint[2] && y < fourPoint[1] || y > fourPoint[5]){
