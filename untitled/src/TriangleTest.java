@@ -13,7 +13,7 @@ public class TriangleTest {
 
     @Test
     void getArea(){
-        triangle1.getArea();
+        triangle1.getArea(3,3,3,6,7,3);
         assertEquals(triangle1.area, 6);
     }
 

@@ -6,7 +6,7 @@ class Main {
         Rectangle rect1 = new Rectangle(2,2,4,2,2,4,4,4);
         //It is only possible to create rightangled triangles.
         //the first point will be the right angled corner
-        Triangle tri1 = new Triangle(2,2,2,6,7,2);
+        Triangle tri1 = new Triangle(1,1,4,4,7,1);
 
         // here the printInfo method prints info of the different shapes
         cir1.printInfo();
@@ -18,7 +18,10 @@ class Main {
 
         // checks and print wether a the given point is inside the shape 
         System.out.println("Is the point [5,2] inside cir1? " + cir1.hasPointInside(5,2));
-        System.out.println("Is the point [5,2] inside tri1? " + tri1.hasPointInside(5,2));
+        System.out.println("Is the point [3,2] inside tri1? " + tri1.hasPointInside(3,2));
+
+        //System.out.println(tri1.getArea(1,1,4,4,7,1));
+
 
     }
 

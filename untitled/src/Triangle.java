@@ -24,11 +24,17 @@ public class Triangle extends Shapes {
         this.center[1] = y1;
 
         this.circumference = getCircumference();
-        this.area = getArea();
+        this.area = getArea(x1, y1,  x2,  y2,  x3,y3);
     }
     // calculates the area of the traingle using the side lenghts of the triangle
-    public double getArea(){
-        this.area = side1 * side2 * 0.5;
+    public double getArea(int x1, int y1, int x2, int y2, int x3, int y3){
+
+
+        this.area = ((x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2))/2)*-1;
+
+        /*this.area = (threePoint[0]*(threePoint[3]-threePoint[5])
+                +threePoint[2]*(threePoint[5]-threePoint[1])
+                +threePoint[4]*(threePoint[1]-threePoint[3]))/2;*/
         return area;
     }
     // calculates the circumference of the triangle using the side lenghts of the triangle
@@ -38,10 +44,30 @@ public class Triangle extends Shapes {
     }
     // could not find a proper way to check if a point was located within a triangle
     // this is why a string is returned
-    public String hasPointInside(int x, int y){
-        isInside = false;
-        return "it is not possible to check this...";
-    }
+    public boolean hasPointInside(int x, int y) {
 
+        double A= area;
+        int x1 = threePoint[0];
+        int y1 = threePoint[1];
+        int x2 = threePoint[2];
+        int y2 = threePoint[3];
+        int x3 = threePoint[4];
+        int y3 = threePoint[5];
+
+        double A1 = getArea(x, y, x1, y1, x2, y2);
+        double A2 = getArea(x, y, x2, y2, x3, y3);
+        double A3 = getArea(x, y, x1, y1, x3, y3);
+
+        System.out.println(A);
+        System.out.println(A1);
+        System.out.println(A2);
+        System.out.println(A3);
+
+        if (A1 + A2 + A3 == area) {
+
+            isInside = true;}
+            return isInside;
+
+        }
 
 }
