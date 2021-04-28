@@ -26,6 +26,12 @@ public class TriangleTest {
     @Test
     void hasPointInside(){
         triangle1.hasPointInside(4,4);
+        assertEquals(triangle1.isInside, true);
+    }
+
+    @Test
+    void hasPointInside2(){
+        triangle1.hasPointInside(2,2);
         assertEquals(triangle1.isInside, false);
     }
 

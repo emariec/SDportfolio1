@@ -18,9 +18,9 @@ class Main {
 
         // checks and print wether a the given point is inside the shape 
         System.out.println("Is the point [5,2] inside cir1? " + cir1.hasPointInside(5,2));
-        System.out.println("Is the point [3,2] inside tri1? " + tri1.hasPointInside(3,2));
+        System.out.println("Is the point [3,2] inside tri1? " + tri1.hasPointInside(6,4));
 
-        //System.out.println(tri1.getArea(1,1,4,4,7,1));
+
 
 
     }
