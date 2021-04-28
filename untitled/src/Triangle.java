@@ -20,8 +20,8 @@ public class Triangle extends Shapes {
         this.side3 = distTwoPoints(threePoint[2],threePoint[3],threePoint[4],threePoint[5]);
 
         //For a triangle we decided to define the center as one of the points, since a triangle can have multiple centers. 
-        this.center[0] = x1;
-        this.center[1] = y1;
+        this.center[0] = (x1 + x2 + x3)/3;
+        this.center[1] = (y1 + y2 + y3)/3;
 
         this.circumference = getCircumference();
         this.area = getArea(x1, y1,  x2,  y2,  x3,y3);
