@@ -24,7 +24,7 @@ public class Triangle extends Shapes {
         this.center[1] = (y1 + y2 + y3)/3;
 
         this.circumference = getCircumference();
-        this.area = getArea(x1, y1,  x2,  y2,  x3,y3);
+        this.area = getArea(x1,y1,x2,y2,x3,y3);
     }
     // calculates the area of the traingle using the side lenghts of the triangle
     public double getArea(int x1, int y1, int x2, int y2, int x3, int y3){
@@ -63,7 +63,7 @@ public class Triangle extends Shapes {
         System.out.println(A2);
         System.out.println(A3);
 
-        if (A1 + A2 + A3 == area) {
+        if (A1 + A2 + A3 == A) {
 
             isInside = true;}
             return isInside;
