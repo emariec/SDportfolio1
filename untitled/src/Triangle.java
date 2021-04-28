@@ -56,7 +56,7 @@ public class Triangle extends Shapes {
 
         double A1 = getArea(x, y, x1, y1, x2, y2);
         double A2 = getArea(x, y, x2, y2, x3, y3);
-        double A3 = getArea(x, y, x1, y1, x3, y3);
+        double A3 = getArea(x1, y1, x, y,  x3, y3);
 
         System.out.println(A);
         System.out.println(A1);
