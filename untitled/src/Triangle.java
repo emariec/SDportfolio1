@@ -27,7 +27,7 @@ public class Triangle extends Shapes {
         this.area = getArea(x1,y1,x2,y2,x3,y3);
     }
     // calculates the area of the traingle using the side lenghts of the triangle
-    public double getArea(int x1, int y1, int x2, int y2, int x3, int y3){
+    public double getArea(double x1, double y1, double x2, double y2, double x3, double y3){
 
 
         this.area = ((x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2))/2)*-1;
